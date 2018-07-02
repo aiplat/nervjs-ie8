@@ -22,12 +22,13 @@
  - --- static      ------静态css、images、less文件目录
  - --- *.html      ------页面文件
  - src             ------代码主体目录
- - --- assets      ------静态css、images、less文件目录
+ - --- assets      ------各页面静态css、images、less文件目录
  - --- components  ------公共组件目录
  - --- page        ------各页面打包入口文件
  - --- plugins     ------公共函数或插件目录
  - --- views       ------路由对应页面视图目录
  - --- pageConfig.js     ------各页面路径配置（与page中文件关联）、TKD配置
+ - static          ------公共静态css、images、less文件目录
  - index.html      ------多页面应用公共html入口文件
 
 ---
