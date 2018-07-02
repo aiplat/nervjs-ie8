@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="nervjs-reactjs-ie8">
+    <meta name="description" content="nervjs-reactjs-ie8">
+    <meta name="author" content="womendi@qq.com" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="renderer" content="webkit">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>apps</title>
+    <!--[if IE 8]>
+      <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks['es5-polyfill'].entry %>"></script>
+    <![endif]-->
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+      <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+    <% } %>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <% for (var chunkName in htmlWebpackPlugin.files.chunks) { %>
+      <% if (chunkName === 'es5-polyfill') continue; %>
+      <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks[chunkName].entry %>"></script>
+    <% } %>
+
+
+    <% for (var key in htmlWebpackPlugin.files) { %>
+      <%=key%><%=JSON.stringify(htmlWebpackPlugin.files[key])%><br>
+    <% } %>
+    <br><br><br>
+    <% for (var key in htmlWebpackPlugin.options) { %>
+      <%=key%><%=JSON.stringify(htmlWebpackPlugin.options[key])%><br><br>
+    <% } %>
+  </body>
+</html>
