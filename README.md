@@ -24,7 +24,7 @@
  - src             ------代码主体目录
  - --- assets      ------各页面静态css、images、less文件目录
  - --- components  ------公共组件目录
- - --- page        ------各页面打包入口文件
+ - --- page        ------各页面打包入口文件(例如：index.js对应路由地址是/index.html)
  - --- plugins     ------公共函数或插件目录
  - --- views       ------路由对应页面视图目录
  - --- pageConfig.js     ------各页面路径配置（与page中文件关联）、TKD配置
