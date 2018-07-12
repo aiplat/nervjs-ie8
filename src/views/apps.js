@@ -55,6 +55,11 @@ class Index extends Nerv.Component {
               market: ''
             },
             {
+              name: '单页面angular版',
+              url: 'http://ajs.aiplat.com',
+              market: ''
+            },
+            {
               name: '多页面nervjs版',
               url: 'http://nerv.aiplat.com',
               market: ''
@@ -93,11 +98,7 @@ class Index extends Nerv.Component {
                     <li className="cm_pc_12 cm_pd05 cm_tc cm_be">
                       {item2.arr.map((v, key) => {
                         return (
-                          <div
-                              className="cm_pc_12 cm_lh3 cm_br02 cm_bf cm_bb1ce"
-                              key={key}
-                              onClick={() => this.toDown(v.url)}
-                          >
+                          <div className="cm_pc_12 cm_lh3 cm_br02 cm_bf cm_bb1ce" key={key} onClick={() => this.toDown(v.url)}>
                             <div className="cmtou">
                               {v.market ? v.market + '-' + v.name : v.name}
                             </div>
