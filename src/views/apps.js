@@ -46,7 +46,7 @@ class Index extends Nerv.Component {
           arr: [
             {
               name: '单页面vue版',
-              url: 'http://www.aiplat.com',
+              url: 'http://aiplat.com',
               market: ''
             },
             {
