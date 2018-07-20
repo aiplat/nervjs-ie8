@@ -40,6 +40,11 @@ class Index extends Nerv.Component {
             url: 'https://github.com/womendi/angular-app'
           },
           {
+            name: 'wepy-app',
+            desc: '改写wepy的小程序框架',
+            url: 'https://github.com/womendi/wepy-app'
+          },
+          {
             name: 'express-multipage',
             desc: '改写express的多页面框架',
             url: 'https://github.com/womendi/express-multipage'
@@ -72,10 +77,7 @@ class Index extends Nerv.Component {
         <div className="cm_main">
           <ul className="cm_pc_12 cm_mt3 cm_mb6">
             <li className="cm_pc_12 cm_mt05">
-              <img
-                  className="cm_wh7 cm_bs100 cm_br305 cm_lessbr305 cm_fc"
-                  src={this.state.icon}
-              />
+              <img className="cm_wh7 cm_bs100 cm_br305 cm_lessbr305 cm_fc" src={this.state.icon} />
             </li>
             <li className="cm_pc_12 cm_be">
               <div className="cm_pc_12 cm_pd05 cm_bf cm_lh105 cm_ti2 cm_mb05">
@@ -88,11 +90,7 @@ class Index extends Nerv.Component {
                   {this.state.indexData.gitName}
                 </div>
                 <div className="cm_pa cm_tr0 cm_hl3 cm_mr05">
-                  <a
-                      className="cm_c9c"
-                      href={this.state.indexData.gitUrl2}
-                      target="_blank"
-                  >
+                  <a className="cm_c9c" href={this.state.indexData.gitUrl2} target="_blank" >
                     {this.state.indexData.gitUrl}
                   </a>
                 </div>
@@ -100,10 +98,7 @@ class Index extends Nerv.Component {
               <div className="cm_pc_12 cm_pd05 cm_tc cm_be">
                 {this.state.indexData.gitList.map((v, k) => {
                   return (
-                    <div
-                        className="cm_pc_12 cm_lh3 cm_br02 cm_bf cm_bb1ce"
-                        key={k}
-                    >
+                    <div className="cm_pc_12 cm_lh3 cm_br02 cm_bf cm_bb1ce" key={k} >
                       <a href={v.url} target="_blank">
                         <div className="cmtou">
                           <span className="cm_c1c cm_fwb">{v.name}</span>:<span className="cm_fs08">
